@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Profile";
+}
+@{
+    Layout = null;
+}
+@using OSP.Models;
+<h1 style="font-family:'Segoe Script'"><b>Admin Profile</b></h1>
+<body>
+    <div class="col-md-8">
+
+            @foreach(var o in Model)
+            {
+                <br />
+                <h1 style="font-family:'Segoe Print'"><b>Admin</b></h1>
+                <h3 style="font-family:'Segoe Print'"><b>Name:</b> @o.Name</h3>
+                <h3 style="font-family: 'Segoe Print'"><b>Email:</b> @o.Email</h3>
+                <h3 style="font-family: 'Segoe Print'"><b>Password:</b>@o.Password</h3>
+                <h3 style="font-family: 'Segoe Print'"><b>Gender: </b>@o.Gender</h3>
+                <h3 style="font-family: 'Segoe Print'"><b>Phone: </b>@o.Phone</h3>
+                <h3 style="font-family: 'Segoe Print'"><b>Address: </b>@o.Address</h3>
+                
+            }
+            
+      </div>
+</body>

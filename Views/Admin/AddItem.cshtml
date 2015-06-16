@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "AddItem";
+}
+@{
+    Layout = null;
+}
+@model OSP.Models.Item
+<h1 style="font-family: Lucida Handwriting"><b>Add Item</b></h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="~/Content/file3/style.css" rel="stylesheet" />
+    <link href="~/Content/file3/demo.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="form">
+        <form id="contactform" action="/Admin/AdItem" method="post" enctype="multipart/form-data">
+
+            <p class="contact"><label for="price">Price</label></p>
+            <input id="Price" name="Price" required="" >
+
+             <p class="contact"><label for="description">Description</label></p>
+            <input id="Description" name="Description" required="" >
+
+            <p class="contact"><label for="category">Add Category</label></p>
+            <input id="Category" name="Category" placeholder="category" required="" tabindex="2" type="text">
+
+            <p class="contact"><label for="stock">Stock</label></p>
+            <input id="Stock" name="Stock" placeholder="stock" required="" tabindex="2" type="text">
+
+             Upload Image: <input type="file" name="image" />
+
+
+            <input class="buttom" name="Add" id="submit" tabindex="5" value="Add Item!" type="submit">
+            
+</form>
+
+    </div>
+
+</body>
+</html>

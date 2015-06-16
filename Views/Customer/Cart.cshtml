@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Cart";
+}
+@using OSP.Models;
+<h2>Cart</h2>
+<table>
+                   
+                    <tr>
+                        <td>CustomerId </td>
+                        <td>CustomerName </td>
+                        <td>OrderId </td>
+                        <td>ItemName </td>
+                        <td>ItemDescription  </td>
+                        <td>ItemPrice </td>
+                        <td>Quantity </td>
+                        <td>OrderPrice </td>
+                        <td>OrderDate </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>@ViewBag.Customer.Id.ToString() </td>
+                        <td>@ViewBag.Customer.Name </td>
+                        <td>@Model.Id </td>
+                        <td>@ViewBag.Item.Name </td>
+                        <td>@ViewBag.Item.Description  </td>
+                        <td>@ViewBag.Item.Price </td>
+                        <td>@Model.Quantity </td>
+                        <td>@ViewBag.Price </td>
+                        <td>@Model.Date  </td>
+                    </tr>
+                    
+                </table>
